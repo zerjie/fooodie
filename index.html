@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fooodie Ranks</title>
+    
+    <style>
+        body {background-color: rgb(243, 150, 150); text-align: center; color: floralwhite;}
+    </style>
+</head>
+<body>
+
+    <font face = "Monospace"><h1>Enter your Ranking</h1></font>
+    <form action="rankings.html" method="GET">
+
+        <div>
+            <font face = "Monospace"><label> Name of Location</label></font>
+            <input type="string" name="string">
+            <br><br>  
+        </div>
+ 
+        <div>        
+            <font face = "Monospace"><label> Name of Food</label></font>
+            <input type="string" name="string">
+            <br><br>  
+        </div>
+
+        <div>
+        <font face = "Monospace"><label>Flavour </label></font>
+        <input 
+            type="number" 
+            inputmode="numeric" 
+            name="number" 
+            min="0" 
+            max="10">
+        <br><br>  
+        </div>
+
+        <font face = "Monospace"><label>Texture </label></font>
+        <input 
+            type="number" 
+            inputmode="numeric" 
+            name="number" 
+            min="0" 
+            max="10">
+        <br><br>  
+
+        <font face = "Monospace"><label>Presentation </label></font>
+        <input 
+            type="number" 
+            inputmode="numeric" 
+            name="number" 
+            min="0" 
+            max="2">
+        <br><br>  
+
+
+        <font face = "Monospace"><label>Value </label></font>
+        <input 
+            type="number" 
+            inputmode="numeric" 
+            name="number" 
+            min="0" 
+            max="2">
+    </form>
+    <br><br>  
+<button onclick="functionSub()" ><font face = "Monospace">Submit </font></button>
+
+</body>
+</html>
