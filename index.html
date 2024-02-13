@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML to Sheets</title>
+    <title>Fooodie Ranks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="Google Sheet.css">
 </head>
 <body>
-    <font face = "Monospace">
-        <h1 class="">Ranking</h1>
-
+    <div class="container">
         <form class="" id="form">
-          <div class="">
-            <input class="" type="text" name="Location" id="location-name" placeholder="Location">
-          </div>
-          <div class="">
-            <input class="" type="text" name="Food" id="food-name" placeholder="Food">
-          </div>
-          <div class="">
-            <input class="" type="text" name="Ranker Name" id="ranker-name" placeholder="Your Name">
-          </div>
-          <div class="">
-            <input class="" type="number" inputmode="numeric" name="Flavour" id="flavour" placeholder="Flavour" min="0" max="10">
-          </div>
-          <div class="">
-            <input class="" type="number" inputmode="numeric" name="Texture" id="texture" placeholder="Texture" min="0" max="10">
-          </div>
-          <div class="">
-            <input class="" type="number" inputmode="numeric" name="Presentation" id="presentation" placeholder="Presentation" min="0" max="2">
-          </div>
-          <div class="">
-            <input class="" type="number" inputmode="numeric" name="Value" id="value" placeholder="Value" min="0" max="2">
-          </div>
-          <input type="date" name="Date of Rating" id="">
-          <button class="" type="submit" id="submit">Submit Your Rank</button>
+            <h1 class="">Ranking</h1>
+            <div class="input-box">
+                <input type="text" name="Location" id="location-name" placeholder="Location">
+            </div>
+            <div class="input-box">
+                <input type="text" name="Food" id="food-name" placeholder="Food" required>
+            </div>
+            <div class="input-box">
+                <input type="text" name="Ranker Name" id="ranker-name" placeholder="Your Name">
+            </div>
+            <div class="input-box">
+                <input type="number" inputmode="numeric" name="Flavour" id="flavour" placeholder="Flavour" min="0" max="10" required>
+            </div>
+            <div class="input-box">
+                <input type="number" inputmode="numeric" name="Texture" id="texture" placeholder="Texture" min="0" max="10" required>
+            </div>
+            <div class="input-box">
+                <input type="number" inputmode="numeric" name="Presentation" id="presentation" placeholder="Presentation" min="0" max="2" required>
+            </div>
+            <div class="input-box">
+                <input type="number" inputmode="numeric" name="Value" id="value" placeholder="Value" min="0" max="2" required>
+            </div>
+            <div class="input-box">
+                <input type="date" name="Date of Rating" id="">
+            </div>
+            <button class="btn" type="submit" id="submit">Submit Your Rank</button>
         </form>
-    </font>
+    </div>
 </body>
 
 <script>
@@ -54,7 +58,7 @@
         .then(response => { 
               btn.disabled = false
       btn.innerHTML = "Submit"
-            alert('Your rank has been submitted', response) })
+            alert('Your rank has been submitted!', response) })
         .catch(error => {
                      btn.disabled = false
       btn.innerHTML = "Submit"
