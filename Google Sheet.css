@@ -6,7 +6,7 @@
    font-family: "Roboto Slab", sans-serif;
 }
 body{
-    background: url("img.jpg") no-repeat;
+    background: url("image.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -17,8 +17,10 @@ body{
 .container{
    width: 330px;
    background: transparent;
+   /*
    backdrop-filter: blur(20px) brightness(30%);
-   color: rgb(238, 238, 238);
+   */
+   color: rgb(43, 43, 43);
    border: 0.01px inset #d4d4d4;
 
    box-shadow: 0 0 10px rgba(0, 0, 0, 10);
