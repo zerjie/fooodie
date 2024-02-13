@@ -17,15 +17,17 @@ body{
 .container{
    width: 330px;
    background: transparent;
+   backdrop-filter: blur(20px) brightness(30%);
    color: rgb(238, 238, 238);
    border: 0.01px inset #d4d4d4;
-   backdrop-filter: blur(20px) brightness(30%);
+
    box-shadow: 0 0 10px rgba(0, 0, 0, 10);
    border-radius: 10px;
 }
 .container h1{
     font-size: 36px;
     text-align: center;
+    
     margin-top: 10px;
     margin-bottom: 30px;
     color: floralwhite;
